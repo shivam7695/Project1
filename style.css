@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Outfit:wght@100..900&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Outfit:wght@100..900&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Outfit:wght@100..900&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Outfit:wght@100..900&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titan+One&display=swap');
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero-section{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text{
+    width: 50%;
+   
+   height: 100vh;
+   margin: 170px ;
+   margin-top: 550px;
+}
+.hero-text h5{
+    font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #FF3147;
+  
+}
+.hero-text h1{
+    font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-top: 25px;
+  
+}
+.hero-text p{
+    margin-top: 30px;
+    font-size: 17px;
+    margin-bottom: 50px;
+}
+.hero-text button{
+    border: 0;
+    outline: 0;
+    background-color: #FF3147;
+    color: white;
+    font-size: 10px;
+    width: 100px;
+    height: 30px;
+}
+.hero-img {
+    width: 50%;
+    
+    height: 100vh;
+
+}
+
+.hero-img img{
+   width: 70% ;
+   height: 600px;
+   margin: 10%;
+}
+
+/* popup */
+
+.popup{
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    transform: translate(-50%, -50% ) scale(1.25);
+    opacity: 0;
+    width: 500px;
+    padding: 20px 30px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.549);
+    border-radius: 5px;
+}
+.popup.active{
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50% ) scale(1);  
+    
+}
+.close-btn i{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+
+    cursor: pointer;
+}
+.form h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+.form-element input{
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.458);
+    padding: 15px;
+    margin-right: 20px;
+}
+.form-element .email{
+    width: 100%;
+    margin: 15px 10px;
+}
+.form-name{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px ;
+    gap: 15px;
+    margin-right: 20px;
+ 
+    
+}
+
+.checkbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.checkbox label{
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+.btn{
+    width: 100%;
+}
+ 
+.btn button{
+  margin: auto;
+    width: 90%;
+    padding: 15px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    color: white;
+    background-color: #FF3366;
+}
+.img-section{
+    width: 100%;
+    height: 110vh;
+    background-color: #FAFAFA;
+}
+.whatwedo{
+    color: #FF3147;
+    margin-left: 240px;
+    font-size: 20px;
+   padding-top: 145px;
+  
+}
+
+.card-text{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.card-text h1{
+    width: 50%;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Reddit Mono", monospace;
+    padding: 0 10px;
+    letter-spacing: 1.5px;
+    margin-left: 230px;
+    margin-right: 140px;
+    
+}
+.card-text p{
+    width: 50%;
+    margin-left: 30px;
+    margin-right: 70px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+.card-section{
+    width: 76%;
+    margin-left: 230px ;
+    margin-top: 40px;
+    display: flex;
+   justify-content: space-between;
+    align-items: center;
+    
+    overflow: hidden;
+} 
+.card{
+    width: 280px;
+   cursor: pointer;
+   margin-left: 8px;
+}
+.card img:hover{
+    transform: scale(1.2);
+}
+.card2{
+    width: 280px;
+    height: 400px;
+    background-color: #FF3147;
+    color: white;
+    margin-left: 8px;
+    border-radius: 10px;
+}
+.card2:hover{
+    border-radius: 10px;
+    transform: scale(1.2);
+}
+.card2 img{
+    margin-top: 60px;
+    margin-left: 100px;
+}
+.card2 h2{
+    margin: 15px 12px;
+    font-size: 25px;
+}
+.card2 p{
+    margin: 15px;
+    font-size:14px;
+    text-align: center;
+
+}
+.btn2 {
+    cursor: pointer;
+    width: 170px;
+    margin: auto;
+    padding: 3px 10px;
+    background-color: #FAFAFA;
+    color: #FF3147;
+    
+}
+.btn2 a{
+    text-decoration: none;color: #FF3147;
+}
+.btn2 i{
+    width: 25px;
+}
+.slider-img{
+    width: 150px;
+    margin-left:230px ;
+    cursor: pointer;
+}
+
+.slider-img .img1{
+    width: 20px;
+    height: 20px;
+}
+.slider-img img{
+    width: 15px ;
+    height: 15px;
+}
+.slider-img img:hover{
+    width: 30px;
+    height: 30px;
+}
+.services{
+    width: 80%;
+    margin: auto;
+    margin-left: 240px;
+}
+.services h3{
+    text-align: center;
+    font-size: 17px;
+    color: #FF3366;
+}
+.services h1{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+.service-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 40px;
+    gap: 20px;
+}
+
+.service-list div img{
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.project{
+    width: 80%;
+    margin-left: 240px;
+   margin-top: 50px;
+}
+.project h5{
+    text-align: center;
+    font-size: 17px;
+    color: #FF3366;
+}
+.project h1{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+.project-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.project-info img{
+    width: 600px;
+    height: 450px;
+    margin-right: 20px;
+}
+.project-text{
+    width: 250px;
+    background-color: #F6F6F6;
+   
+}
+.project-text div{
+    padding: 10px;
+}
+.project-text div h6{
+    font-size: 14px;
+}
+.project-text div p{
+    font-size: 13px;
+}
+
+.company-growth{
+    width: 80%;
+    margin-left: 240px;
+    margin-top: 50px;
+    background-color: #FAFAFA;
+    margin-bottom: 40PX;
+}
+.company-growth h5{
+    text-align: center;
+    font-size: 17px;
+    color: #FF3366;
+}
+.company-growth h1{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+.card-container{
+    margin-left: 50px;
+}
+.cards{
+    width: 200px;
+    margin: 15px;
+   
+    padding: 20px;
+    align-items: center;
+    background-color: #Fff;
+}
+.cards1{
+    width: 200px;
+    margin: 15px;
+   
+    padding: 20px;
+    align-items: center;
+    background-color: #Fff;
+}
+
+.cards img{
+    width: 30px;
+    height: 30px;
+    margin-left: 40%;
+    margin-top: 15px ;
+    margin-bottom: 15px;
+   
+}
+.cards h3 , p{
+    text-align: center;
+}
+.cards p{
+    color: rgba(52, 52, 52, 0.699);
+}
+
+
+.footer-text{
+    width: 80%;
+    margin-left: 220px;
+    margin-top: 50px;
+    margin-bottom: 50px ;
+    text-align: center;
+}
+
+.footer-text>h2{
+    color:#FF3147 ;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+
+.footer-text p{
+   margin-top: 50px;
+}
+.footer-text h1{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.text-name{
+    color: gray;
+}
+
+
+
+
+.footer{
+    width: 100%;
+    height: 250px;
+    background-color: #FF3147;
+margin-top: 15px;
+
+}
+
+.footer img{
+    width: 60%;
+    height: 50px;
+    margin-top:100px ;
+    margin-left: 280px;
+
+}
+
+
+@media (max-width:750px) {
+    .hero-img{
+        display: none;
+    }
+    .services{
+        margin-top: 80px;
+    }
+
+    .slider-img{
+        margin-bottom: 40px;
+    }
+    .service-list{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+        .project-info{  
+            display: flex;
+        flex-direction: column;
+            }
+  
+    .project-text{
+        display: flex;
+
+    }
+    
+    .card-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer{
+        display: none;
+    }
+}
